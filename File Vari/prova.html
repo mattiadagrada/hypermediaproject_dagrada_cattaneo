@@ -3,6 +3,7 @@
 
 <head>
 
+
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,7 +24,9 @@
 <!-- Bootstrap and JQuery js -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
+  <script src="jquery.js"></script>
+      <script type="text/javascript" src="slider/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="slider/js/jssor.slider.mini.js"></script>
 </head>
 
 <body>
@@ -48,6 +51,10 @@
     </nav>
 <!--END FIRST NAVBAR-->
 	
+	
+	
+<!--//TODO: panel stays open at mouse moving!-->	
+	
 <!--SECOND NAVBAR WITH DROPDOWNS-->
 <nav class="navbar navbar-secondnav" role="navigation">
         <div class="container">
@@ -71,14 +78,15 @@
 					</li>
 					<!-- Devices panel -->
 					<li>
-						<div class="dropdown">
+						<div class="dropdown" id="dropdownref">
 							<button class="dropbtn">DEVICES</button>
 								<div class="dropdown-content">
-									<a href="#"><i class="fa fa-mobile fa-4x" aria-hidden="true"></i>Smartphones & Cellphones </a>
-									<a href="#"><i class="fa fa-laptop fa-4x" aria-hidden="true"></i> Tablets & PCs </a>
-									<a href="#"><i class="fa fa-wifi fa-4x" aria-hidden="true"></i> Modem & Networking </a>
-									<a href="#"><i class="fa fa-television fa-4x" aria-hidden="true"></i> TV & Smart Living </a>
-									<a href="#"li><i class="fa fa-tag fa-4x" aria-hidden="true"></i> Device Outlet </a>
+									<h3> Categories: </h3>
+									<a href="#" class="col-sm-offset-1 col-sm-2 clearfix"><i class="fa fa-mobile fa-4x" aria-hidden="true"></i> Smartphones & Cellphones </a>
+									<a href="#" class="col-sm-2 clearfix"><i class="fa fa-laptop fa-4x" aria-hidden="true"></i> Tablets & PCs </a>
+									<a href="#" class="col-sm-2 clearfix"><i class="fa fa-wifi fa-4x" aria-hidden="true"></i> Modem & Networking </a>
+									<a href="#" class="col-sm-2 clearfix"><i class="fa fa-television fa-4x" aria-hidden="true"></i> TV & Smart Living </a>
+									<a href="#" class="col-sm-2 clearfix"><i class="fa fa-tag fa-4x" aria-hidden="true"></i> Device Outlet </a>
 								</div>
 						</div>
 					</li>
@@ -87,10 +95,11 @@
 						<div class="dropdown">
 							<button class="dropbtn">SMART LIFE</button>
 								<div class="dropdown-content">
-									<a href="#"><i class="fa fa-television fa-4x" aria-hidden="true"></i> TV & Entertainment </a>
-									<a href="#"><i class="fa fa-street-view fa-4x" aria-hidden="true"></i> Person </a>
-									<a href="#"><i class="fa fa-home fa-4x" aria-hidden="true"></i> Home & Family </a>
-									<a href="#"><i class="fa fa-heartbeat fa-4x" aria-hidden="true"></i> Health & Fitness </a>		
+									<h3> Categories: </h3>
+									<a href="#" class="col-sm-offset-2 col-sm-2 clearfix"><i class="fa fa-television fa-4x" aria-hidden="true"></i> TV & Entertainment </a>
+									<a href="#" class="col-sm-2 clearfix"><i class="fa fa-street-view fa-4x" aria-hidden="true"></i> Person </a>
+									<a href="#" class="col-sm-2 clearfix"><i class="fa fa-home fa-4x" aria-hidden="true"></i> Home & Family </a>
+									<a href="#" class="col-sm-2 clearfix"><i class="fa fa-heartbeat fa-4x" aria-hidden="true"></i> Health & Fitness </a>		
 								</div>
 						</div>
 					</li>
@@ -99,10 +108,11 @@
 						<div class="dropdown">
 							<button class="dropbtn">ASSISTANCE SERVICE</button>
 								<div class="dropdown-content">
-									<a href="#"><i class="fa fa-phone fa-4x" aria-hidden="true"></i> Line Management </a>
-									<a href="#"><i class="fa fa-credit-card fa-4x" aria-hidden="true"></i> Monitoring Costs & Payments </a>
-									<a href="#"><i class="fa fa-cogs fa-4x" aria-hidden="true"></i> Technical Support </a>
-									<a href="#"><i class="fa fa-envira fa-4x" aria-hidden="true"></i>Smart Life Assistance </a>
+									<h3> Categories: </h3>
+									<a href="#" class="col-sm-offset-2 col-sm-2 clearfix"><i class="fa fa-phone fa-4x" aria-hidden="true"></i> Line Management </a>
+									<a href="#" class="col-sm-2 clearfix"><i class="fa fa-credit-card fa-4x" aria-hidden="true"></i> Monitoring Costs & Payments </a>
+									<a href="#" class="col-sm-2 clearfix"><i class="fa fa-cogs fa-4x" aria-hidden="true"></i> Technical Support </a>
+									<a href="#" class="col-sm-2 clearfix"><i class="fa fa-envira fa-4x" aria-hidden="true"></i>Smart Life Assistance </a>
 								</div>
 						</div>
 					</li>
@@ -114,20 +124,33 @@
         <!-- end container -->
     </nav>
 <!--END SECOND NAVBAR WITH DROPDOWNS-->
-
 	
 <!--SLIDESHOW-->
-
+ <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden; visibility: hidden;">
+        <!-- Loading Screen -->
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="../images/slide1.png" />
+            </div>
+            <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                <img data-u="image" src="../images/slide2.jpg" />
+            </div>
+        
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:16px;height:16px;"></div>
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora22l" style="top:0px;left:12px;width:40px;height:58px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora22r" style="top:0px;right:12px;width:40px;height:58px;" data-autocenter="2"></span>
+    </div>
 <!--NAVBAR FIXED BOTTOM-->
 <!--FOOTER-->
-	<div class="container">
-        <hr>
+	<div class="footer">
         <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; M-Mobile 2016</p>
-                </div>
-            </div>
+            <p>Copyright &copy; M-Mobile 2016</p>
         </footer>
     </div>
 <!--END FOOTER-->
