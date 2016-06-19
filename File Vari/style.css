@@ -54,7 +54,7 @@ body{
   margin-bottom: 8px;
   background-color: rgba(255, 255, 255, 0.6);
   background-image: none;
-  border: 1px solid transparent;
+  border: 1px solid #0066CC;
   border-radius: 4px;
 }
 .navbar-toggle:focus {
@@ -168,6 +168,28 @@ body{
 	/* border-radius: 10px; */
 	border: 1px solid #e7e7e7;
 	text-align: center;
+	z-index: 1;
+}
+
+@media ( max-width: 768px ){
+	
+	
+	.dropdown{
+		width: 100%;
+	}
+	
+	.dropdown-content{
+		position: relative;
+		width: 100%;
+	}
+	
+	button.dropbtn{
+		width: 100%;
+	}
+	
+	.navbar-secondnav .navbar-nav > li{
+		padding: 0px;
+	}
 }
 
 .dropdown-content > a > i {
@@ -202,6 +224,7 @@ body{
     background-color: #ffffff;
 }
 
+
 /*COSE INSERITE PER PROVA DA QUI*/
 
 .col-sm-9 > h3 {
@@ -222,7 +245,7 @@ body{
 }
 
 .col-sm-9 {
-	width: 90%; /*potrebbe non essere necessario, da valutare*/
+	width: 100%; /*potrebbe non essere necessario, da valutare*/
 }
 
 .col-sm-2 > a {
@@ -238,6 +261,7 @@ body{
 	margin-right:30%;
 	padding-bottom: 5px;	
 }
+
 
 /*A QUI*/
 
