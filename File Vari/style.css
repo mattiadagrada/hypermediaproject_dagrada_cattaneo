@@ -347,21 +347,29 @@ body{
 
 /* carousel of devices */
 
-/* NON RIESCO A CAMBIARE LE DIMENSIONI DI STE MALEDETTE IMMAGINI!!!!! Nè SETTARE PADDING O ALTRO. DA GUARDARE
+/* NON RIESCO A CAMBIARE LE DIMENSIONI DI STE MALEDETTE IMMAGINI!!!!! Nè SETTARE PADDING O ALTRO. DA GUARDARE*/
 
-.carousel-inner > img{
-	height: 290px !important;
-	width: 100px !important;
+.carousel > item > a > img-responsive {
+	width: 100px;
+	height: 250px;
 }
-*/
+
+.carousel-inner {
+	width: 70%;
+	margin: auto;
+}
+
 .carousel-inner .active.left { left: -33%; }
 .carousel-inner .next        { left:  33%; }
 .carousel-inner .prev        { left: -33%; }
 .carousel-control.left,.carousel-control.right {background-image:none;}
+.carousel-control.left > i,.carousel-control.right > i{
+	color: #777;
+}
 .item:not(.prev) {visibility: visible;}
 .item.right:not(.prev) {visibility: hidden;}
 .rightest{ visibility: visible;}
-		
+
 /* Spotify add */
 .adv {
 	display:flex;
