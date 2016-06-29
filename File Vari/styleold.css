@@ -15,13 +15,11 @@ body{
   padding-left: 60px;
   padding-right: 60px;
   font-size: 20px;
-  border-right: 1px solid #bbb;
   color: #fff;
 }
 
 .navbar-firstnav .navbar-nav > li:first-child > a {
   padding-left: 60px;
-  border-left: 1px solid #bbb;
   color: #fff;
 }
 
@@ -85,7 +83,6 @@ body{
 .navbar-secondnav {
   border-top: 50px solid #bbb;
   background-color: #fff;
-  border-color: #777;
   border-radius: 0px;
 }
 .navbar-secondnav .navbar-text {
@@ -94,7 +91,6 @@ body{
 .navbar-secondnav .navbar-nav > li {
   padding-left: 40px;
   padding-right: 40px;
-  border-right: 1px solid #bbb;
   color: #777;
 }
 
@@ -114,7 +110,6 @@ body{
   width: auto;
 }
 .navbar-secondnav .navbar-nav > li:first-child  {
-  border-left: 1px solid #bbb;
   color: #777;
 }
 .navbar-secondnav .navbar-nav > li > a:hover,
@@ -169,16 +164,17 @@ body{
 	border: 1px solid #777;
 	text-align: center;
 	z-index: 1;
+	
 }
 
 @media ( max-width: 768px ){
-	
 	
 	.dropdown{
 		width: 100%;
 	}
 	
 	.dropdown-content{
+		height: auto;
 		position: relative;
 		width: 100%;
 	}
@@ -192,6 +188,7 @@ body{
 	}
 }
 
+
 .dropdown-content > a > i {
 	color: #0066CC;
 	margin-left:30%;
@@ -200,11 +197,21 @@ body{
 	
 }
 
-.dropdown-content > h3 {
+.dropdown-content .container .row > h3 {
 	text-align: left;
-	padding-left: 120px;
+	padding-left: 15px;
 	color: #0066CC;
 }
+
+.dropdown-content .container .row .col-sm-2 > a{
+	font-size: 18px;
+}
+
+.dropdown-content .container .row .col-sm-2 > a > div{
+	font-size: 18px;
+	color: #777;
+}
+
 
 .dropdown-content > a {
 	font-size: 18px;
@@ -224,47 +231,6 @@ body{
     background-color: #ffffff;
 }
 
-
-/*COSE INSERITE PER PROVA DA QUI*/
-
-.col-sm-9 > h3 {
-	text-align: left;
-	padding-left: 120px;
-	color: #0066CC;
-}
-
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
-    position: relative;
-    min-height: 1px;
-    padding-right: 5px;
-    padding-left: 5px;
-}
-
-.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
-    float: left;
-}
-
-.col-sm-9 {
-	width: 100%; /*potrebbe non essere necessario, da valutare*/
-}
-
-.col-sm-2 > a {
-	font-size: 18px;
-    color: #777;
-    padding: 12px 16px;
-    padding-top: 10px;
-}
-
-.col-sm-2 > a > i{
-	color: #0066CC;
-	margin-left:30%;
-	margin-right:30%;
-	padding-bottom: 5px;	
-}
-
-
-/*A QUI*/
-
 /*END DROPDOWN*/
 
 
@@ -277,7 +243,7 @@ body{
 
 /* FOOTER */
 .footer {
-   position:fixed;
+   position:relative;
    left:0px;
    bottom:0px;
    height:70px;
@@ -349,13 +315,20 @@ body{
 
 /* NON RIESCO A CAMBIARE LE DIMENSIONI DI STE MALEDETTE IMMAGINI!!!!! Nè SETTARE PADDING O ALTRO. DA GUARDARE*/
 
-.carousel > item > a > img-responsive {
-	width: 100px;
-	height: 250px;
+.carousel-inner .col-sm-4 > a {
+	text-align: center;
+}
+
+IMG.img-responsive{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	max-height: 300px;
 }
 
 .carousel-inner {
 	width: 70%;
+	max-height: 450px;
 	margin: auto;
 }
 
@@ -372,18 +345,18 @@ body{
 
 /* Spotify add */
 .adv {
+	position: relative;
 	display:flex;
     align-items:center;
 	border-bottom: 1px solid #777;
 	border-top: 1px solid #777;
 }
 .adv > img{
-	
 	float:right;
 	width: 70vw;
 	height: 400px;
 }
-.adv > span {
+.adv > div {
 	text-align: center;
 	padding-left: 40px;
 }
@@ -392,12 +365,25 @@ body{
 	font-size: 22px;
 	color: #777;
 }
+.adv > div > div{
+	font-size: 22px;
+	color: #777;
+}
+.adv > div > span{
+	font-size: 22px;
+	color: #777;
+}
 
 .adv > span > h3{
 	color: #0066CC;
 }
 
-.adv > span > button{
+.adv > div > h3{
+	color: #0066CC;
+}
+
+
+.adv > div > button{
 	margin-top:20px;
 	border-radius: 10px;
 	background-color: #fff;
