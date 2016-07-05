@@ -1,6 +1,6 @@
 // Carousel Auto-Cycle
   $(document).ready(function() {
-    $('.carousel').carousel({
+    $('.carousel').slide({
       interval: 6000
     })
   });
