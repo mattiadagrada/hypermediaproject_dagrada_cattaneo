@@ -1,0 +1,85 @@
+.dropdown-toggle.active{
+	border-bottom: 5px solid #085394;
+}
+
+.allsmartlife> div{
+	width:100vw;
+	left:0;
+	top:0;
+	height:35vw;
+}
+
+
+
+.textandbutton{
+	top:15vw;
+	width:50%;
+	height: 20vw;
+	left: 25vw;
+	position:absolute;
+	text-align:center;
+	background: rgba(255,255,255,0.7);
+}
+
+
+.tvandentertainment{
+	display: inline-flex;
+}
+
+.person{
+	display: inline-flex;
+	
+}
+
+.homeandfamily > div{
+	top: 87vw;
+}
+
+.healthandfitness > div{
+	top:123vw;
+}
+
+.textandbutton > h3{
+	font-size: 2vw;
+	color: #085394;
+	padding-bottom: 1.5vw;
+}
+
+.textandbutton > p{
+	font-size: 1.6vw;
+	color: #777;
+	padding-bottom:1.5vw;
+}
+
+.btn{
+	width: 20%;
+	font-size: 1.5vw;
+}
+
+
+@media (max-width:768px){
+	.textandbutton{
+		width:60%;
+		font-size: 4vw;
+	}
+	
+	.btn.btn-blue{
+		font-size:1.7vw;
+	}
+	
+	.tvandentertainment > div{
+		position:absolute;
+		top:26vw;
+		left:21vw;
+	}
+}
+
+@media (min-width:600px)and (max-width:768){	
+	.tvandentertainment > div{
+		position:absolute;
+		top:21vw;
+		left:21vw;
+	}
+}
+
+@media (min-width: )

@@ -6,7 +6,7 @@ body{
 
 /*FIRST NAVBAR*/
 .navbar-firstnav {
-  background-color: #0066CC;
+  background-color: #085394;
 }
 
 .navbar-firstnav .navbar-nav > li > a {
@@ -55,7 +55,7 @@ body{
   margin-bottom: 8px;
   background-color: rgba(255, 255, 255, 0.6);
   background-image: none;
-  border: 1px solid #0066CC;
+  border: 1px solid #085394;
   border-radius: 4px;
 }
 .navbar-toggle:focus {
@@ -66,7 +66,7 @@ body{
   width: 22px;
   height: 2px;
   border-radius: 1px;
-  background-color: #0066CC;
+  background-color: #085394;
 }
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
@@ -146,15 +146,15 @@ body{
 
 .dropdown-menu > li > a{
 	margin: 10px 20px;
-	color: #0066CC;
+	color: #085394;
 }
 
 .menu-title {
-	border-bottom: 1px solid #0066CC;
+	border-bottom: 1px solid #085394;
 }
 
 .open > .dropdown-toggle{
-	border-bottom: 5px solid #0066CC;
+	border-bottom: 5px solid #085394;
 }
 
 .dropdown-toggle{
@@ -237,7 +237,7 @@ body{
 	font-size: 1.5px;
 	margin-top: 20px;
 	margin-left: 30px;
-	color: #0066CC;
+	color: #085394;
 }
 
 .carousel{
@@ -255,11 +255,11 @@ body{
 	text-align: center;
 }
 .caption h4 {
-    color: #0066cc;
+    color: #085394;
 }
 
 .caption p {  
-    color: #0066cc;
+    color: #085394;
 	font-size: 16px;
 }
 
@@ -324,7 +324,7 @@ li { list-style-type:none;}
 }
 
 .adv > div > h3{
-	color: #0066CC;
+	color: #085394;
 	font-size: 2.5vw;
 }
 
@@ -365,7 +365,7 @@ li { list-style-type:none;}
    bottom:0;
    right:0;
    height:70px;
-   background:#0066CC;
+   background:#085394;
 }
 
 .footer > p {
@@ -434,6 +434,4 @@ li { list-style-type:none;}
 	.adv > div > h3{
 		font-size: 5vw;
 	}
-	
-	
 }
