@@ -2,41 +2,31 @@
 	border-bottom: 5px solid #085394;
 }
 
-.allsmartlife> div{
-	width:100vw;
-	left:0;
-	top:0;
+.allsmartlife > div > img{
+	width:100%;
 	height:35vw;
+	left:0;
+	top:0;	
 }
 
-
+.allsmartlife > div{
+	width:100%;
+	height:35vw;
+    margin-top: 0;
+    margin-left:0;
+    position: relative;
+}
 
 .textandbutton{
-	top:15vw;
+	margin-top:-27vw;
+	margin-left:0;
+	position:absolute;
 	width:50%;
 	height: 20vw;
 	left: 25vw;
-	position:absolute;
 	text-align:center;
 	background: rgba(255,255,255,0.7);
-}
-
-
-.tvandentertainment{
-	display: inline-flex;
-}
-
-.person{
-	display: inline-flex;
-	
-}
-
-.homeandfamily > div{
-	top: 87vw;
-}
-
-.healthandfitness > div{
-	top:123vw;
+	vertical-align:middle;
 }
 
 .textandbutton > h3{
@@ -46,6 +36,8 @@
 }
 
 .textandbutton > p{
+	padding-left:1vw;
+	padding-right:1vw;
 	font-size: 1.6vw;
 	color: #777;
 	padding-bottom:1.5vw;
@@ -60,26 +52,42 @@
 @media (max-width:768px){
 	.textandbutton{
 		width:60%;
-		font-size: 4vw;
+		height: 25vw;
+		margin-top: -30vw;
+	}
+	
+	.textandbutton > h3, .textandbutton > p{
+		padding-bottom:0;
+		font-size: 2.5vw;
 	}
 	
 	.btn.btn-blue{
-		font-size:1.7vw;
+		font-size:1.8vw;		
 	}
 	
-	.tvandentertainment > div{
-		position:absolute;
-		top:26vw;
-		left:21vw;
+	.dropdown-toggle.active{
+		border-bottom: none;
+		background-color: #e9f0f6;
 	}
+	
 }
 
-@media (min-width:600px)and (max-width:768){	
-	.tvandentertainment > div{
-		position:absolute;
-		top:21vw;
-		left:21vw;
+@media (max-width:495px){
+	.textandbutton{
+		width:50%;
+		height: 22vw;
 	}
+	
+	.textandbutton > p{
+		display: none;
+	}
+	
+	.textandbutton > h3{
+		padding-bottom:1.5vw;
+	}
+	
+	.btn.btn-blue{
+		width: 30%;
+	}
+	
 }
-
-@media (min-width: )
