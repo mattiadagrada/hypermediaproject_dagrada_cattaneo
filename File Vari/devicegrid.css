@@ -1,4 +1,5 @@
-.container-fluid{
+
+.container-fluid.devicecontainer{
 	margin-bottom: 5vw;
 }
 
@@ -8,10 +9,9 @@
 }
 
 .devicegrid > h2{
-	padding-top:2vw;
 	padding-left: 1vw;
 	color: #085394;
-	font-size: 18px;
+	font-size: 24px;
 }
 
 .thumbnail{
@@ -20,7 +20,7 @@
 
 .device{
 	text-align: center;
-	border: 1px solid #bbb;
+	border: 2px solid #eee;
 }
 
 .device > .caption{
@@ -47,7 +47,7 @@ legend {
 }
 
 .filterinputs{
-	font-size: 14px;
+	font-size: 16px;
 	padding-left: 1.5vw;
 }
 
@@ -55,6 +55,13 @@ legend {
 	width:80%;
 	text-align: left;
 	margin-bottom: 3vw;
+}
+
+.filters > h3{
+	color: #777;
+	margin-bottom: 0;
+	margin-top: 3vw;
+	border-bottom: 2px solid #eee;
 }
 
 .col-md-9 > .row{
@@ -84,6 +91,11 @@ legend {
 	.devicegrid > h2{
 		margin-top: 3vw;
 	}
+	
+	.filters > legend, .filters > h3, .devicegrid > h2 {
+		font-size: 18px;
+	}
+	
 }
 
 

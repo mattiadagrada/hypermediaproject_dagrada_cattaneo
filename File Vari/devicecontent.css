@@ -1,0 +1,73 @@
+.breadcrumb{
+	font-size: 16px;
+	padding-left: 5vw;
+	border-bottom: 2px solid #eee;
+	border-top: 2px solid #eee;
+	background-color: #fff;
+	margin-bottom:0px;
+}
+
+.disabled{
+	cursor: not-allowed;
+}
+
+.devpresentation > div > img{
+	width:90%;
+}
+
+.devicename{
+	color: #085394;
+	font-size: 1.7vw;
+	padding-bottom:1vw;
+	padding-left: 1.5vw;
+}
+
+.devpresentation{
+	padding-top: 3vw;
+	margin:auto;
+	width:90%;
+}
+
+.speclist > li {
+	color: #777;
+	font-size: 1.5vw;
+	padding-bottom: 2vw;
+}
+
+.btn {
+	width: 30%;
+	float:right;
+	margin-right: 7vw;
+}
+
+.techspecs, .assistanceservice, .slservice{
+	padding-top: 3vw;
+	margin:auto;
+	width:80%;
+}
+
+.slservice{
+	margin-bottom: 6vw;
+}
+
+.techspecs > legend, .assistanceservice > legend, .slservice > legend {
+	color: #085394;
+	padding-left: 1.5vw;
+	padding-bottom: 1vw;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, .assistanceservice > a, .slservice > a {
+	color: #777;
+	padding-bottom: 1vw;
+	padding-left: 2vw;
+	font-size: 1.3vw;
+    text-align: left;
+    padding-right: 8vw;
+}
+
+

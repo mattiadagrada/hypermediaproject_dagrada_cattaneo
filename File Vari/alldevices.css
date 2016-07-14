@@ -1,7 +1,15 @@
+.breadcrumb{
+	font-size: 16px;
+	padding-left: 5vw;
+	border-bottom: 2px solid #eee;
+	border-top: 2px solid #eee;
+	background-color: #fff;
+	margin-bottom:0px;
+}
+
 .dropdown-toggle.active{
 	border-bottom: 5px solid #085394;
 }
-
 
 .alldevices{
 	margin: auto;
