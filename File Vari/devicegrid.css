@@ -1,0 +1,94 @@
+.container-fluid{
+	margin-bottom: 5vw;
+}
+
+.devicegrid{
+	margin:auto;
+	width: 90%;
+}
+
+.devicegrid > h2{
+	padding-top:2vw;
+	padding-left: 1vw;
+	color: #085394;
+	font-size: 18px;
+}
+
+.thumbnail{
+	margin-bottom:0;
+}
+
+.device{
+	text-align: center;
+	border: 1px solid #bbb;
+}
+
+.device > .caption{
+	padding-top: 1.5vw;
+}
+
+.device > .caption > p{
+	margin-bottom: 0;
+}
+
+.pricetag{
+	color: #777;
+	font-size: 1.3vw;
+}
+
+.pricediscount{
+	color: red;
+	font-size: 1.3vw;
+}
+
+legend {
+	color: #085394;
+	padding-top: 2vw;
+}
+
+.filterinputs{
+	font-size: 14px;
+	padding-left: 1.5vw;
+}
+
+.filters{
+	width:80%;
+	text-align: left;
+	margin-bottom: 3vw;
+}
+
+.col-md-9 > .row{
+	padding-top: 3vw;
+}
+
+.btn{
+	padding: 0.69em 1.5vw;
+    font-size: 1.125vw;
+	margin-top:1.5vw;
+	margin-bottom: 1.7vw;
+	margin-left:0;
+	width: 50%;
+}
+
+
+@media (max-width: 600px){
+	.devicegrid{
+		margin:auto;
+		width: 100%;
+	}
+	.devicegrid > h2, .devicegrid .col-md-3{
+		margin:auto;
+		width: 90%;
+	}
+	
+	.devicegrid > h2{
+		margin-top: 3vw;
+	}
+}
+
+
+@media (max-width: 767px){
+	.device > .caption > p{
+		margin-bottom: 2.1vw;
+	}
+}

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>Modem & Networking</title>
+<!-- Bootstrap Core CSS -->
+  <link href="bootstrap.new/css/bootstrap.css" rel="stylesheet">
+
+ <!-- Custom CSS -->
+ <link href="style2.css" rel="stylesheet">
+ <link href="alldevices.css" rel="stylesheet">
+ <link href="devicegrid.css" rel="stylesheet">
+ 
+ <!-- Font awesome icons -->
+ 
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+ 
+<!-- Bootstrap and JQuery js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  
+ </head>
+
+<body>
+
+<!--FIRST NAVBAR-->
+<nav class="navbar navbar-firstnav navbar-fixed-top" role="navigation">
+        <div class="container">
+				<ul class="nav navbar-nav">
+					<li>
+						<a class="active" href="#">Consumer</a>
+					</li>	
+					<li>
+						<a href="#">The Group</a>
+					</li>
+				</ul>
+		</div>
+        <!-- /.container -->
+</nav>
+<!--END FIRST NAVBAR-->
+
+<!--SECOND NAVBAR-->
+<nav class="navbar navbar-secondnav navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               <a class="navbar-brand" href="#"><img alt="Brand" src="..\images\logo.png"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <ul class="nav navbar-nav">
+					<li><a href="#">Promotions</a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle active" data-toggle="dropdown" href="#">Devices</a>
+							<ul class="dropdown-menu">
+								<li><a class="menu-title" href="#">All Devices</a></li>
+								<li><a href="#">Smartphones & Cellphones</a></li>
+								<li><a href="#">Tablets & PCs</a></li>
+								<li><a href="#">Modem & Networking</a></li>
+								<li class="active"><a href="#">TV & Smart Living</a></li>
+								<li><a href="#">Outlet</a></li>								
+							</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Smart Life</a>
+							<ul class="dropdown-menu">
+								<li><a class="menu-title" href="#">All SL Services</a></li>
+								<li><a href="#">TV & Entertainment</a></li>
+								<li><a href="#">Person</a></li>
+								<li><a href="#">Home & Family</a></li>
+								<li><a href="#">Health & Fitness</a></li>						
+							</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Assistance Service</a>
+							<ul class="dropdown-menu">
+								<li><a class="menu-title" href="#">All Assistance Services</a></li>
+								<li><a href="#">Line Management</a></li>
+								<li><a href="#">Monitoring Costs & Payments</a></li>
+								<li><a href="#">Technical Support</a></li>
+								<li><a href="#">Smart Life Assistance</a></li>							
+							</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+</nav>
+<!--END NAVBAR-->
+
+<!-- ALL DEVICES BY CATEGORY-->
+<div class="container-fluid">
+	<div class="row">
+		<div class="devicegrid">
+		<h2> TV & SMART LIVING </h2>
+		<!-- SMARTPHONES-->
+			<div class="col-md-3">
+				
+				<form class="filters">
+					<legend>
+						<h3> FILTERS </h3>
+					</legend>
+					<legend class="filtertitle"> Price </legend>
+					<div class="filterinputs">
+						<input type="checkbox" name="price" value="1"> &lt; 100 <br>
+						<input type="checkbox" name="price" value="2"> 100-200 <br>
+						<input type="checkbox" name="price" value="3"> &gt; 200 <br>
+					</div>
+					
+					<legend class="filtertitle"> Brand </legend>
+					<div class="filterinputs">
+						<input type="checkbox" name="brand" value="Apple"> Apple <br>
+						<input type="checkbox" name="brand" value="Beats"> Beats <br>
+						<input type="checkbox" name="brand" value="D-Link"> D-Link <br>
+						<input type="checkbox" name="brand" value="Essence"> Essence <br>
+						<input type="checkbox" name="brand" value="Philips"> Philips <br>
+						<input type="checkbox" name="brand" value="Samsung"> Samsung <br>
+					</div>
+					<legend class="filtertitle"> OS </legend>
+					<div class="filterinputs">
+						<input type="checkbox" name="os" value="Android"> Android <br>
+						<input type="checkbox" name="os" value="iOS"> iOS <br>
+					</div>
+				</form>
+			</div>
+			<div class="col-md-9 devices">
+				<div class="row">
+					<div class="col-xs-4">
+						<div class="device">
+							<div class="caption">
+								<h4>D-Link</h4>
+								<p>Smart Home</p>
+							</div>
+							<div class="thumbnail">
+								<a href="#"><img src="../images/dlinkSmartHome.jpg" alt=""></a>
+							</div>
+							<div class="pricetag"> 5 €/month
+							</div>
+							<div class="pricediscount">	<br> </div>
+							<div class="row">
+								<div class="col three">				
+									<a href="#" class="btn btn-blue">More details</a>			
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-4">
+						<div class="device">
+							<div class="caption">
+								<h4>Apple</h4>
+								<p>Watch Sport 38</p>
+							</div>
+							<div class="thumbnail">
+								<a href="#"><img src="../images/applesport.jpg" alt=""></a>
+							</div>
+							<div class="pricetag"> 10,28 €/month
+							</div>
+							<div class="pricediscount">	<br> </div>
+							<div class="row">
+								<div class="col three">				
+									<a href="#" class="btn btn-blue">More details</a>			
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-4">
+						<div class="device">
+							<div class="caption">
+								<h4>Samsung</h4>
+								<p>Smart TV 50"</p>
+							</div>
+							<div class="thumbnail">
+								<a href="#"><img src="../images/samsung_smart_tv.jpg" alt=""></a>
+							</div>
+							<div class="pricetag"> 26,08 €/month
+							</div>
+							<div class="pricediscount">	<br> </div>
+							<div class="row">
+								<div class="col three">				
+									<a href="#" class="btn btn-blue">More details</a>			
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!-- END FIRST ROW -->
+			<!-- SECOND ROW -->
+				<div class="row">
+					<div class="col-xs-4">
+						<div class="device">
+							<div class="caption">
+								<h4>Essence</h4>
+								<p>WeR@Home</p>
+							</div>
+							<div class="thumbnail">
+								<a href="#"><img src="../images/essence.jpg" alt=""></a>
+							</div>
+							<div class="pricetag"> 5,50 €/month
+							</div>
+							<div class="pricediscount"> <br> </div>
+							<div class="row">
+								<div class="col three">				
+									<a href="#" class="btn btn-blue">More details</a>			
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-4">
+						<div class="device">
+							<div class="caption">
+								<h4>Beats</h4>
+								<p>Solo 2 Headphones</p>
+							</div>
+							<div class="thumbnail">
+								<a href="#"><img src="../images/beats.jpg" alt=""></a>
+							</div>
+							<div class="pricetag">199,90 €
+							</div>
+							<div class="pricediscount"> <br> </div>
+							<div class="row">
+								<div class="col three">				
+									<a href="#" class="btn btn-blue">More details</a>			
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-4">
+						<div class="device">
+							<div class="caption">
+								<h4>Samsung</h4>
+								<p>Galaxy Gear S</p>
+							</div>
+							<div class="thumbnail">
+								<a href="#"><img src="../images/gears.jpg" alt=""></a>
+							</div>
+							<div class="pricetag">349,90 €
+							</div>
+							<div class="pricediscount"> <br> </div>
+							<div class="row">
+								<div class="col three">				
+									<a href="#" class="btn btn-blue">More details</a>			
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!-- END SECOND ROW -->
+			<!-- THIRD ROW -->
+				<div class="row">
+					<div class="col-xs-4">
+						<div class="device">
+							<div class="caption">
+								<h4> D-Link </h4>
+								<p>Fixed Camera with Wi-Fi</p>
+							</div>
+							<div class="thumbnail">
+								<a href="#"><img src="../images/fixedcamera.jpg" alt=""></a>
+							</div>
+							<div class="pricetag"> 79,90 €/month
+							</div>
+							<div class="pricediscount"> <br> </div>
+							<div class="row">
+								<div class="col three">				
+									<a href="#" class="btn btn-blue">More details</a>			
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-4">
+						<div class="device">
+							<div class="caption">
+								<h4>Samsung</h4>
+								<p>Gear VR</p>
+							</div>
+							<div class="thumbnail">
+								<a href="#"><img src="../images/samsungVR.jpg" alt=""></a>
+							</div>
+							<div class="pricetag"> 129,90 € 
+							</div>
+							<div class="pricediscount"> <br> </div>
+							<div class="row">
+								<div class="col three">				
+									<a href="#" class="btn btn-blue">More details</a>			
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-4">
+						<div class="device">
+							<div class="caption">
+								<h4>Philips</h4>
+								<p>Friends of Hue Bloom </p>
+							</div>
+							<div class="thumbnail">
+								<a href="#"><img src="../images/bloom.png" alt=""></a>
+							</div>
+							<div class="pricetag"> 179,95 € 
+							</div>
+							<div class="pricediscount"> <br> </div>
+							<div class="row">
+								<div class="col three">				
+									<a href="#" class="btn btn-blue">More details</a>			
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			<!-- END THIRD ROW -->
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END SMART LIFE CATEGORIES -->
+
+<!--FOOTER-->
+	<div class="footer">
+		<p>Copyright &copy; M-Mobile 2016</p>
+	</div>
+<!--END FOOTER-->
+</body>
+
+</html>
