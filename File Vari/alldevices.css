@@ -1,13 +1,8 @@
-.breadcrumb{
-	font-size: 16px;
-	padding-left: 5vw;
-	border-bottom: 2px solid #eee;
-	border-top: 2px solid #eee;
-	background-color: #fff;
-	margin-bottom:0px;
+.dropdown-toggle.active{
+	border-bottom: 5px solid #085394;
 }
 
-.dropdown-toggle.active{
+.promotions.active{
 	border-bottom: 5px solid #085394;
 }
 
@@ -21,7 +16,7 @@
 	left:0px;
 	right: 0px;
 	width:100%;
-	height: 30vw;
+	height: 35vw;
 }
 
 .row > div > h3{

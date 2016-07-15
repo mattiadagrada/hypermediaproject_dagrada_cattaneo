@@ -10,7 +10,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Smartphones & Cellphones</title>
+<title>Promotions</title>
 <!-- Bootstrap Core CSS -->
   <link href="bootstrap.new/css/bootstrap.css" rel="stylesheet">
 
@@ -18,6 +18,7 @@
  <link href="style2.css" rel="stylesheet">
  <link href="alldevices.css" rel="stylesheet">
  <link href="devicegrid.css" rel="stylesheet">
+ <link href="promotions.css" rel="stylesheet">
  
  <!-- Font awesome icons -->
  
@@ -63,12 +64,12 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
                 <ul class="nav navbar-nav">
-					<li><a href="#">Promotions</a></li>
+					<li><a href="#" class="promotions active">Promotions</a></li>
 					<li class="dropdown">
-						<a class="dropdown-toggle active" data-toggle="dropdown" href="#">Devices</a>
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Devices</a>
 							<ul class="dropdown-menu">
 								<li><a class="menu-title" href="#">All Devices</a></li>
-								<li class="active"><a href="#">Smartphones & Cellphones</a></li>
+								<li><a href="#">Smartphones & Cellphones</a></li>
 								<li><a href="#">Tablets & PCs</a></li>
 								<li><a href="#">Modem & Networking</a></li>
 								<li><a href="#">TV & Smart Living</a></li>
@@ -101,172 +102,22 @@
 </nav>
 <!--END NAVBAR-->
 
-<!-- BREADCRUMB -->
-<div class="container-fluid">
-	<div class="row">
-		<ol class="breadcrumb" >
-		  <li><a href="#">Devices</a></li>
-		  <li class="active">Smartphones & Cellphones </li>
-		</ol>
+<!--DEVICES IMAGE -->
+<div class="devimage">
+	<div class="container-fluid">
+		<div class="row">
+			<img src="../images/promotions.jpg">
+		</div>
 	</div>
 </div>
-<!-- END BREADCRUMB -->
+<!--DEVICES IMAGE -->
 
-<!-- DEVICES GRID-->
-<div class="container-fluid devicecontainer">
+<!-- ALL DEVICES BY CATEGORY-->
+<div class="container-fluid">
 	<div class="row">
-		<div class="devicegrid">
-		<h2> SMARTPHONES & CELLPHONES </h2>
-			<div class="col-md-3">
-				<form class="filters">
-					<h3> FILTERS </h3>
-					<legend class="filtertitle"> Price </legend>
-					<div class="filterinputs">
-						<input type="checkbox" name="price" value="1"> &lt; 150 <br>
-						<input type="checkbox" name="price" value="2"> 150-300 <br>
-						<input type="checkbox" name="price" value="3"> 300-400 <br>
-						<input type="checkbox" name="price" value="4"> &gt; 400 <br>
-					</div>
-					<legend class="filtertitle"> Brand </legend>
-					<div class="filterinputs">
-						<input type="checkbox" name="brand" value="Apple"> Apple <br>
-						<input type="checkbox" name="brand" value="Huawei"> Huawei <br>
-						<input type="checkbox" name="brand" value="LG"> LG <br>
-						<input type="checkbox" name="brand" value="Microsoft"> Microsoft <br>
-						<input type="checkbox" name="brand" value="Samsung"> Samsung <br>
-						<input type="checkbox" name="brand" value="Sony"> Sony <br>
-					</div>
-					<legend class="filtertitle"> OS </legend>
-					<div class="filterinputs">
-						<input type="checkbox" name="os" value="Android"> Android <br>
-						<input type="checkbox" name="os" value="iOS"> iOS <br>
-						<input type="checkbox" name="os" value="Windows"> Windows <br>
-					</div>
-				</form>
-			</div>
-			<div class="col-md-9 devices">
-				<div class="row">
-					<div class="col-xs-4">
-						<div class="device">
-							<div class="caption">
-								<h4>Samsung</h4>
-								<p>Galaxy S7</p>
-							</div>
-							<div class="thumbnail">
-								<img src="../images/SAMSUNG_S7.jpg" alt="">
-							</div>
-							<div class="pricetag"> 20,34 €/month
-							</div>
-							<div class="pricediscount"> <br> </div>
-							<div class="row">
-								<div class="col three">				
-									<a href="#" class="btn btn-blue">More details</a>			
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-4">
-						<div class="device">
-							<div class="caption">
-								<h4>Apple</h4>
-								<p>Iphone SE </p>
-							</div>
-							<div class="thumbnail">
-								<img src="../images/iPhoneSE.jpg" alt="">
-							</div>
-							<div class="pricetag"> 21,94 €/month
-							</div>
-							<div class="pricediscount"> <br> </div>
-							<div class="row">
-								<div class="col three">				
-									<a href="#" class="btn btn-blue">More details</a>			
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-4">
-						<div class="device">
-							<div class="caption">
-								<h4>Huawei</h4>
-								<p>P9</p>
-							</div>
-							<div class="thumbnail">
-								<img src="../images/huawei-p9.jpg" alt="">
-							</div>
-							<div class="pricetag"> 749,90 €
-							</div>
-							<div class="pricediscount">	<br> </div>
-							<div class="row">
-								<div class="col three">				
-									<a href="#" class="btn btn-blue">More details</a>			
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			<!-- END FIRST ROW -->
-			<!-- SECOND ROW -->
-				<div class="row">
-					<div class="col-xs-4">
-						<div class="device">
-							<div class="caption">
-								<h4>LG</h4>
-								<p>G5</p>
-							</div>
-							<div class="thumbnail">
-								<img src="../images/LG_G5.jpg" alt="">
-							</div>
-							<div class="pricetag"> 26,95 €/month
-							</div>
-							<div class="pricediscount">	<br> </div>
-							<div class="row">
-								<div class="col three">				
-									<a href="#" class="btn btn-blue disabled">More details</a>			
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-4">
-						<div class="device">
-							<div class="caption">
-								<h4>Sony</h4>
-								<p>XperiaX</p>
-							</div>
-							<div class="thumbnail">
-								<img src="../images/sony-xperiaX.jpg" alt="">
-							</div>
-							<div class="pricetag"> 629,90 €
-							</div>
-							<div class="pricediscount">	<br> </div>
-							<div class="row">
-								<div class="col three">				
-									<a href="#" class="btn btn-blue disabled">More details</a>			
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-4">
-						<div class="device">
-							<div class="caption">
-								<h4>Apple</h4>
-								<p>iPhone 6s</p>
-							</div>
-							<div class="thumbnail">
-								<img src="../images/apple-iPhone6s.jpg" alt="">
-							</div>
-							<div class="pricetag"> 29,99 €/month
-							</div>
-							<div class="pricediscount">	<br> </div>
-							<div class="row">
-								<div class="col three">				
-									<a href="#" class="btn btn-blue disabled">More details</a>			
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			<!-- END SECOND ROW -->
-			<!-- THIRD ROW -->
+		<div class="promodevices">
+			<div class="smartphones">
+				<h3> PROMOTIONS </h3>
 				<div class="row">
 					<div class="col-xs-4">
 						<div class="device">
@@ -309,15 +160,15 @@
 					<div class="col-xs-4">
 						<div class="device">
 							<div class="caption">
-								<h4>LG</h4>
-								<p>K8</p>
+								<h4>Alcatel</h4>
+								<p>ONE TOUCHE Pixi3 8</p>
 							</div>
 							<div class="thumbnail">
-								<img src="../images/lg-k8.jpg" alt="">
+								<img src="../images/alcatel-pixi3.jpg" alt="">
 							</div>
-							<div class="pricetag"> 20,99 €/month
+							<div class="pricetag" style="text-decoration: line-through;"> 99,90 €
 							</div>
-							<div class="pricediscount"> <br> </div>
+							<div class="pricediscount">	69,00 €</div>
 							<div class="row">
 								<div class="col three">				
 									<a href="#" class="btn btn-blue disabled">More details</a>			
@@ -326,12 +177,90 @@
 						</div>
 					</div>
 				</div>
-			<!-- END THIRD ROW -->
-			</div>
+				<div class="row">
+					<div class="col-xs-4">
+						<div class="device">
+							<div class="caption">
+								<h4>Apple</h4>
+								<p>iPad Mini 4</p>
+							</div>
+							<div class="thumbnail">
+								<img src="../images/ipad-mini-4.jpg" alt="">
+							</div>
+							<div class="pricetag" style="text-decoration: line-through;"> 529,90 € 
+							</div>
+							<div class="pricediscount"> 489,00 € </div>
+							<div class="row">
+								<div class="col three">				
+									<a href="#" class="btn btn-blue disabled">More details</a>			
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-4">
+						<div class="device">
+							<div class="caption">
+								<h4>Tecnoware</h4>
+								<p>ERA Plus 900</p>
+							</div>
+							<div class="thumbnail">
+								<img src="../images/tecnoware900.jpg" alt="">
+							</div>
+							<div class="pricetag" style="text-decoration: line-through;"> 79,90 €
+							</div>
+							<div class="pricediscount">	69,00 €</div>
+							<div class="row">
+								<div class="col three">				
+									<a href="#" class="btn btn-blue disabled">More details</a>			
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-4">
+						<div class="device">
+							<div class="caption">
+								<h4>Daily Newspaper</h4>
+								<p>Corriere della Sera</p>
+							</div>
+							<div class="thumbnail">
+								<img src="../images/corrieredellasera.png" alt="">
+							</div>
+							<div class="pricetag"> 19,90 €/month
+							</div>
+							<div class="pricediscount">	First 3 months free! </div>
+							<div class="row">
+								<div class="col three">				
+									<a href="#" class="btn btn-blue disabled">More details</a>			
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-4">
+						<div class="device">
+							<div class="caption">
+								<h4>Daily Newspaper</h4>
+								<p>La Repubblica</p>
+							</div>
+							<div class="thumbnail">
+								<img src="../images/larepubblica.png" alt="">
+							</div>
+							<div class="pricetag"> 15,99 €/month
+							</div>
+							<div class="pricediscount"> The next 2 months are discounted by 70%! </div>
+							<div class="row">
+								<div class="col three">				
+									<a href="#" class="btn btn-blue disabled">More details</a>			
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 		</div>
 	</div>
 </div>
-<!-- END DEVICES GRID -->
+<!-- END SMART LIFE CATEGORIES -->
 
 <!--FOOTER-->
 	<div class="footer">

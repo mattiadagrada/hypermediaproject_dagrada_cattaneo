@@ -1,0 +1,16 @@
+.promodevices{
+	width:85%;
+	margin: auto;
+	padding-top: 3vw;
+	padding-bottom: 5vw;
+}
+
+.smartphones > h3{
+	padding-bottom: 2vw;
+	color: #085394;
+	font-size: 2vw;
+}
+
+.smartphones > .row{
+	padding-bottom: 2.5vw;
+}
