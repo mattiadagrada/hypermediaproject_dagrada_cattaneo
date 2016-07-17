@@ -1,0 +1,67 @@
+.smartlifetitle,
+.smartlifebody{
+	width: 80%;
+	margin: auto;
+}
+
+.smartlifebody{
+	padding-bottom: 3vw;
+}
+
+.smartlifetitle > h3{
+	text-align: center;
+	font-size: 2vw;
+	color: #085394;
+}
+
+.smartlifebody > h4{
+	font-size: 1.5vw;
+	color: #085394;
+}
+
+.smartlifebody > p{
+	font-size: 1.2vw;
+	color: #777;
+}
+
+.smartlifeimage{
+	text-align: center;
+	margin: 0 0 3vw 0;
+}
+
+ol > li{
+	font-size: 1.2vw;
+	color: #777;
+}
+
+ol,ul{
+	-webkit-padding-start: 5vw;
+}
+
+.col-xs-2{
+	width:23%
+}
+
+.articlename{
+	font-size: 1.2vw;
+	color: #777;
+}
+.articleprice{
+	font-size: 1.2vw;
+	color: red;
+}
+
+.thumbnail{
+	margin:0;
+}
+
+.caption > h4{
+	font-size: 1.5vw;
+	color: #085394;
+}
+
+.carousel {
+    top: 0;
+    margin-bottom: 4vw;
+}
+

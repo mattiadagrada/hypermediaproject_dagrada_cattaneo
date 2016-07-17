@@ -1,0 +1,80 @@
+/*TV AND ENTERTAINMENT*/
+
+ul{
+	padding:0;
+}
+
+.tventhead{
+	text-align: center;
+	position: relative;
+	width: 100%;
+}
+
+.tventhead > h3{
+	margin: auto;
+	position: absolute;
+	top: 8vw;
+	width: 100%;
+	font-size: 2vw;
+	color: #085394;
+}
+
+.tventhead > p{
+	margin: auto;
+	position: absolute;
+	top: 15vw;
+	width: 100%;
+	font-size: 1.6vw;
+	color: #777;
+}
+
+.tventhead > img{
+	right:0;
+	left:0;
+	width: 100%;
+	height: 30vw;
+}
+
+.tventbody{
+	width: 80%;
+	margin: auto;
+}
+
+.tventbody > ul > li{
+	margin: auto;
+    width: 65vw;
+    display: flex;
+    align-items: center;
+    padding-top: 2vw;
+    padding-bottom: 3vw;
+}
+
+.tventbody > ul > li > div{
+	padding-left: 5vw;
+	padding-right: 5vw;
+	text-align: center;
+}
+
+.tventbody > ul > li > div > p{
+	font-size: 1.6vw;
+	color: #777;
+}
+
+.tventbody > ul > li > div > h3{
+	font-size: 2vw;
+	color: #085394;
+}
+
+.tventbody > ul > li > div > img {
+	float: left;
+	width: 20vw;
+	height: 15vw;
+}
+
+/*END*/
+
+
+.btn{
+	width: 65%;
+	font-size: 1.3vw;
+}
