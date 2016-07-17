@@ -14,3 +14,16 @@
 .smartphones > .row{
 	padding-bottom: 2.5vw;
 }
+
+@media (max-width: 767px){
+	.smartphones > h3{
+		font-size: 3vw;
+	}
+	
+	.promodevices{
+		width:90%;
+		margin: auto;
+		padding-top: 3vw;
+		padding-bottom: 5vw;
+	}
+}

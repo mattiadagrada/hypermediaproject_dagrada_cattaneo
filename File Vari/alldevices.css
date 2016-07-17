@@ -19,11 +19,11 @@
 	height: 35vw;
 }
 
-.row > div > h3{
+.row > div > legend{
 	padding-top: 2vw;
 	padding-left: 5vw;
 	color: #085394;
-	text-decoration:underline;
+	font-size: 2vw;
 }
 
 .thumbnails > li{
@@ -72,7 +72,7 @@
 }
 
 @media (max-width: 550px){
-	.row > div > h3, .caption > h4, .caption > p{
+	.row > div > legend, .caption > h4, .caption > p{
 		font-size:3vw;
 	}
 	

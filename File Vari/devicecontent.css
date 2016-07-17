@@ -7,10 +7,6 @@
 	margin-bottom:0px;
 }
 
-.disabled{
-	cursor: not-allowed;
-}
-
 .devpresentation > div > img{
 	width:90%;
 }

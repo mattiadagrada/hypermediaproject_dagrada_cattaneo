@@ -1,0 +1,75 @@
+.dropdown-toggle.active{
+	border-bottom: 5px solid #085394;
+}
+
+.services, .servicetype{
+	width:80%;
+	margin: auto;
+}
+
+.services{
+	padding-top: 3vw;
+	padding-bottom: 5vw;
+}
+
+.services > h3{
+	color: #085394;
+	font-size: 1.7vw;
+}
+.services > legend{
+	padding-top: 1.5vw;
+	font-size: 1.6vw;
+	color: #085394;
+}
+
+.servicetype > h3{
+	color: #777;
+	font-size: 1.5vw;
+}
+
+.servicetype > ul > li{
+	padding-bottom: 1vw;
+	list-style-type: circle;
+}
+
+
+.servicetype > ul > li > a{
+	color: #085394;
+	font-size: 1.3vw;
+}
+
+@media (max-width: 767px){
+	.servicetype > ul > li > a, .servicetype > h3, .services > legend {
+		font-size: 2.3vw;
+	}
+}
+
+.servicecontent{
+	width: 80%;
+	margin:auto;
+	padding-bottom: 5vw;
+}
+
+.servicecontent > h3{
+	padding-top: 2vw;
+	color: #085394;
+	font-size: 1.6vw;
+}
+
+.servicecontent > legend{
+	padding-top: 2vw;
+	color: #085394;
+	font-size: 1.5vw;
+}
+
+.servicecontent > p, .servicecontent > ul > li{
+	width: 90%;
+	margin:auto;
+	color: #777;
+	font-size: 1.3vw;
+	padding-bottom: 0.6vw;
+}
+
+.servicecontent > ul > li{
+	list-style-type: square;
+}
