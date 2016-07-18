@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title> </title>
+<!-- Bootstrap Core CSS -->
+  <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+ <!-- Custom CSS -->
+ <link href="CSS/style2.css" rel="stylesheet">
+ <link href="CSS/devicecontent.css" rel="stylesheet">
+ <link href="CSS/footer.css" rel="stylesheet">
+ <link href="CSS/navbar.css" rel="stylesheet"
+ 
+ <!-- Font awesome icons -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+ 
+<!-- Bootstrap and JQuery js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="../JS/inclusion.js"></script>
+  <script src="../JS/devicecontent.js"></script>
+  
+ </head>
+
+<body>
+
+<div class="include" data-include="navbar"></div>
+<div class="include" data-include="consumernavbar"></div>
+
+<!-- BREADCRUMB -->
+<div class="container-fluid">
+	<div class="row">
+		<ol class="breadcrumb">
+		  <li><a href="alldevices.html">All Devices</a></li>
+		  <li><a href="devicegrid.html" id="breadcategory"> </a></li>
+		  <li class="active" id="breaddevice"> </li>
+		</ol>
+	</div>
+</div>
+<!-- END BREADCRUMB -->
+
+
+<!-- DEVICE PRESENTATION -->
+<div class="container-fluid">
+	<div class="row">
+		<div class="devpresentation">
+			<div class="col-xs-5">
+				<img id="devimg" alt=""> 
+			</div>
+			<div class="col-xs-7">
+				<legend class="devicename" id="devbrandname" > </legend>
+				<ul class="speclist">
+					<li id="presentation"> </li>
+					<li id ="price"> </li>
+                    <li id ="outletprice"> </li>
+				</ul>
+				<div class="row">
+					<div class="col three">				
+						<a href="#" class="btn btn-blue disabled">Buy now</a>			
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END DEVICE PRESENTATION -->
+
+<!-- TECNICAL SPECIFICATIONS -->
+<div class="container-fluid">
+	<div class="row">
+		<div class="techspecs">
+			<legend> Technical Specifications </legend>
+			<table id="techtable">
+			</table>
+		</div>
+	</div>
+</div>
+<!-- END TECHNICAL SPECIFICATIONS -->
+
+<!-- RELATED ASSISTANCE SERVICE -->
+<div class="container-fluid">
+	<div class="row">
+		<div class="assistanceservice" id="asservice">
+			<legend> Related Assistance Service </legend>
+		</div>
+	</div>
+</div>
+<!-- END RELATED ASSISTANCE SERVICE -->
+
+<!-- RELATED SL SERVICE -->
+<div class="container-fluid">
+	<div class="row">
+		<div class="slservice" id="slservice">
+			<legend> Related Smart Life Service </legend>
+		</div>
+	</div>
+</div>
+<!-- END RELATED SL SERVICE -->
+
+<!--FOOTER-->
+<div class="include" data-include="footer"></div>
+<!--END FOOTER-->
+</body>
+
+</html>

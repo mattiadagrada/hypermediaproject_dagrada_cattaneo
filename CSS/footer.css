@@ -1,0 +1,51 @@
+/* FOOTER */
+.footer {
+   position:relative;
+   left:0;
+   bottom:0;
+   width:100%;
+   height:10vw;
+   background:#085394;
+}
+
+.footer .col-xs-4 > p {
+	padding-top: 2vw;
+	font-size:2vw;
+	text-align:center;
+	color: #fff;
+}
+
+.footer .col-xs-4 > h4{
+	padding-top: 0.5vw;
+	padding-left: 2vw;
+	font-weight: bold;
+	font-size: 1.2vw;
+	color: #fff;
+}
+
+.footer .col-xs-4 > ul > li > a, 
+.footer .col-xs-4 > ul > li > i{
+	color:#fff;
+	font-size: 1.2vw;
+}
+
+ul{
+	font-size: 1.2vw;
+}
+
+@media ( max-width: 766px ){
+	.footer {
+		height:50px;
+	}
+	
+	.footer > div > .row >.col-xs-4 > h4{
+		display:none;
+		padding-left: 0;
+	}
+	
+	ul{
+		-webkit-padding-start: 2vw;
+	}
+}
+
+/* END FOOTER */

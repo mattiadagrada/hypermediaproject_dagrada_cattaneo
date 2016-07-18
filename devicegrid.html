@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>Smartphones & Cellphones</title>
+<!-- Bootstrap Core CSS -->
+  <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+ <!-- Custom CSS -->
+ <link href="CSS/style2.css" rel="stylesheet">
+ <link href="CSS/alldevices.css" rel="stylesheet">
+ <link href="CSS/devicegrid.css" rel="stylesheet">
+ <link href="CSS/footer.css" rel="stylesheet">
+ <link href="CSS/navbar.css" rel="stylesheet"
+ 
+ <!-- Font awesome icons -->
+ 
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+ 
+<!-- Bootstrap and JQuery js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="JS/inclusion.js"></script>
+  <script src="JS/devices.js"></script>
+ </head>
+
+<body>
+
+<div class="include" data-include="navbar"></div>
+<div class="include" data-include="consumernavbar"></div>
+
+<!-- BREADCRUMB -->
+<div class="container-fluid">
+	<div class="row">
+		<ol class="breadcrumb" >
+		  <li><a href="alldevices.html">All Devices</a></li>
+		  <li class="active" id="BCategory"></li>
+		</ol>
+	</div>
+</div>
+<!-- END BREADCRUMB -->
+
+<!-- DEVICES GRID-->
+<div class="container-fluid devicecontainer">
+	<div class="row">
+		<div class="devicegrid">
+		<h2 id="TCategory"></h2>
+			<div class="col-md-3">
+				<form class="filters">
+					<h3> FILTERS </h3>
+					<legend class="filtertitle"> Price </legend>
+					<div class="filterinputs">
+						<input type="checkbox" name="price" value="1"> &lt; 150 <br>
+						<input type="checkbox" name="price" value="2"> 150-300 <br>
+						<input type="checkbox" name="price" value="3"> 300-400 <br>
+						<input type="checkbox" name="price" value="4"> &gt; 400 <br>
+					</div>
+					<legend class="filtertitle"> Brand </legend>
+					<div class="filterinputs">
+						<input type="checkbox" name="brand" value="Apple"> Apple <br>
+						<input type="checkbox" name="brand" value="Huawei"> Huawei <br>
+						<input type="checkbox" name="brand" value="LG"> LG <br>
+						<input type="checkbox" name="brand" value="Microsoft"> Microsoft <br>
+						<input type="checkbox" name="brand" value="Samsung"> Samsung <br>
+						<input type="checkbox" name="brand" value="Sony"> Sony <br>
+					</div>
+					<legend class="filtertitle"> OS </legend>
+					<div class="filterinputs">
+						<input type="checkbox" name="os" value="Android"> Android <br>
+						<input type="checkbox" name="os" value="iOS"> iOS <br>
+						<input type="checkbox" name="os" value="Windows"> Windows <br>
+					</div>
+				</form>
+			</div>
+            <div class="col-md-9 devices">
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END DEVICES GRID -->
+
+<!--FOOTER-->
+<div class="include" data-include="footer"></div>
+<!--END FOOTER-->
+</body>
+
+</html>
