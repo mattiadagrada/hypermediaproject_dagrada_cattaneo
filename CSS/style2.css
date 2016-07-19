@@ -59,6 +59,12 @@ legend {
 	color: #085394;
 }
 
+@media (max-width: 767px){
+	legend{
+    	font-size: 14px;
+    }
+}
+
 .carousel{
 	top: 20px;
 	margin-bottom: 70px;
@@ -79,7 +85,13 @@ legend {
 
 .caption p {  
     color: #085394;
-	font-size: 16px;
+	font-size:16px;
+}
+
+@media (max-width: 767px){
+	.caption h4, .caption p {
+        font-size:14px;
+    }
 }
 
 /* Carousel Control */
@@ -186,7 +198,7 @@ li { list-style-type:none;}
 	
 	.adv{
 		display:block;
-		margin:0;
+		margin:auto;
 	}
 	
 	.adv > div{

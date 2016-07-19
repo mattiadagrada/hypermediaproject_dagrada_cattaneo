@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title></title>
+<!-- Bootstrap Core CSS -->
+  <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+ <!-- Custom CSS -->
+ <link href="CSS/style2.css" rel="stylesheet">
+ <link href="CSS/smartlife.css" rel="stylesheet">
+ <link href="CSS/footer.css" rel="stylesheet">
+ <link href="CSS/navbar.css" rel="stylesheet">
+ <!-- Font awesome icons -->
+ 
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+ 
+<!-- Bootstrap and JQuery js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="JS/inclusion.js"></script>
+  <script src="JS/personcontent.js"></script>
+  <script src="JS/script.js"></script>
+  
+ </head>
+
+<body>
+
+<div class="include" data-include="navbar"></div>
+<div class="include" data-include="consumernavbar"></div>
+
+<!-- BREADCRUMB -->
+<div class="container-fluid">
+	<div class="row">
+		<ol class="breadcrumb">
+		  <li><a href="allsmartlifeservices.html">All SL Services</a></li>
+		  <li><a href="person.html">Person</a></li>
+		  <li class="active" id="bc"> </li>
+		</ol>
+	</div>
+</div>
+<!-- END BREADCRUMB -->
+
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="smartlifetitle">
+			<h3><b id="name"></b></h3>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="smartlifebody"> 
+			<h4>Description</h4>
+			<p id="descr"></p>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="smartlifeimage">
+			<img id="pimg">
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="smartlifebody">
+			<h4>Activation and Rules</h4>
+			<p id="actvrule"></p>
+            <legend> Related Devices </legend>
+			<ul id="relDev">
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+<!--FOOTER-->
+<div class="include" data-include="footer"></div>
+<!--END FOOTER-->
+</body>
+
+</html>

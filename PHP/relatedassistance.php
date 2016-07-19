@@ -7,7 +7,7 @@ $dbname = "my_mmobilehypermedia";
 // Create connection
 $mysqli = new mysqli($servername, $username, $password, $dbname);
 
-$query = "SELECT Name, Active  FROM DEVICEANDAS as D join ASSISTANCESERVICE as A on D.ASID=A.ID WHERE D.DeviceID=1".$_POST['id'];
+$query = "SELECT Name, Active, ASID  FROM DEVICEANDAS as D join ASSISTANCESERVICE as A on D.ASID=A.ID WHERE D.DeviceID=".$_POST['id'];
 $result = $mysqli->query($query);
 if($result->num_rows > 0){
 	$myArray = array();

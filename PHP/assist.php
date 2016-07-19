@@ -7,7 +7,7 @@ $dbname = "my_mmobilehypermedia";
 // Create connection
 $mysqli = new mysqli($servername, $username, $password, $dbname);
 
-$query = "SELECT Name, Category, Subcategory, ID, Active FROM ASSISTANCESERVICES WHERE Category = $_POST[category]";
+$query = "SELECT Name, Category, Subcategory, ID, Active FROM ASSISTANCESERVICE WHERE Category = " .$_POST['category']." ORDER BY Subcategory";
 $result = $mysqli->query($query);
 if($result->num_rows > 0){
 	$myArray = array();

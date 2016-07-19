@@ -7,7 +7,7 @@ $dbname = "my_mmobilehypermedia";
 // Create connection
 $mysqli = new mysqli($servername, $username, $password, $dbname);
 
-$query = "SELECT Name, Subcategory, Presentation, Image FROM SMARTLIFE WHERE Category='TV & Entertainment' and Presentation!='' ORDER BY Subcategory";
+$query = "SELECT Name, Subcategory, Presentation, Image FROM SMARTLIFE WHERE Category='TV & Entertainment' and Presentation != '' ORDER BY Subcategory";
 $result = $mysqli->query($query);
 if($result->num_rows > 0){
 	$myArray = array();

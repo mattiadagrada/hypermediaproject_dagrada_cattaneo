@@ -7,6 +7,9 @@ $dbname = "my_mmobilehypermedia";
 // Create connection
 $mysqli = new mysqli($servername, $username, $password, $dbname);
 
+$sql='SET CHARACTER SET utf8';
+$result = mysql_query($sql,$mysqli);
+
 $query = "SELECT * FROM DEVICE WHERE ID=".$_POST['id'];
 $result = $mysqli->query($query);
 if($result->num_rows > 0){

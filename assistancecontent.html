@@ -10,7 +10,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Spotify Premium subscription</title>
+<title></title>
 <!-- Bootstrap Core CSS -->
   <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
 
@@ -27,7 +27,9 @@
 <!-- Bootstrap and JQuery js -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script src="../JS/inclusion.js"></script>
+  <script src="JS/inclusion.js"></script>
+  <script src="JS/assistancecontent.js"></script>
+  <script src="JS/script.js"></script>
   
  </head>
 
@@ -41,8 +43,8 @@
 	<div class="row">
 		<ol class="breadcrumb" >
 		  <li><a href="allassistanceservices.html">All Assistance Services</a></li>
-		  <li><a href="assistancecategory.html">Smart Life Assistance</a></li>
-		  <li class="active">Spotify Premium subscription</li>
+		  <li><a id='bccateg'></a></li>
+		  <li class="active" id="bc"></li>
 		</ol>
 	</div>
 </div>
@@ -52,15 +54,13 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="servicecontent">
-			<h3> SPOTIFY PREMIUM - HOW TO PAY THE SUBSCRIPTION </h3>
+			<h3 id="title">  </h3>
 			<legend> Description</legend>
-			<p> Spotify Premium is a music streaming service that offers you milions of tracks and playlists. <br>
-				It is accessible via app on PC, Tablet and Smartphone. You can download directly from <a href="http://www.spotify.com">www.spotify.com</a>
-				if you are on PC or use the Google PlayStore for Android or the App Store for iOS.<br><br>
-				The cost of the subscription to Spotify Premium is 9.99€/month. It will be added on your invoice if you
-				are a subscription client or it will be removed from your credit on your phone card if you are a
-				rechargeable phone card client.
+			<p id="description"> 
 			</p>
+            <legend> Related Devices </legend>
+			<ul id="relDev">
+			</ul>
 		</div>
 	</div>
 </div>

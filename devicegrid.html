@@ -30,6 +30,8 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="JS/inclusion.js"></script>
   <script src="JS/devices.js"></script>
+  <script src="JS/filters.js"></script>
+  <script src="JS/script.js"></script>
  </head>
 
 <body>
@@ -57,26 +59,17 @@
 				<form class="filters">
 					<h3> FILTERS </h3>
 					<legend class="filtertitle"> Price </legend>
-					<div class="filterinputs">
-						<input type="checkbox" name="price" value="1"> &lt; 150 <br>
-						<input type="checkbox" name="price" value="2"> 150-300 <br>
-						<input type="checkbox" name="price" value="3"> 300-400 <br>
-						<input type="checkbox" name="price" value="4"> &gt; 400 <br>
+					<div class="filterinputs" id="filterprice">
+						<input type="checkbox" name="price" value="0 and 150" onclick="filterclick()" id="check0"> &lt;150<br>
+						<input type="checkbox" name="price" value="150 and 300" onclick="filterclick()" id="check1">150-300<br>
+						<input type="checkbox" name="price" value="300 and 400" onclick="filterclick()" id="check2">300-400<br>
+						<input type="checkbox" name="price" value="400 and 1000" onclick="filterclick()" id="check3">&gt; 400<br>
 					</div>
 					<legend class="filtertitle"> Brand </legend>
-					<div class="filterinputs">
-						<input type="checkbox" name="brand" value="Apple"> Apple <br>
-						<input type="checkbox" name="brand" value="Huawei"> Huawei <br>
-						<input type="checkbox" name="brand" value="LG"> LG <br>
-						<input type="checkbox" name="brand" value="Microsoft"> Microsoft <br>
-						<input type="checkbox" name="brand" value="Samsung"> Samsung <br>
-						<input type="checkbox" name="brand" value="Sony"> Sony <br>
+					<div class="filterinputs" id="filterbrand">
 					</div>
 					<legend class="filtertitle"> OS </legend>
-					<div class="filterinputs">
-						<input type="checkbox" name="os" value="Android"> Android <br>
-						<input type="checkbox" name="os" value="iOS"> iOS <br>
-						<input type="checkbox" name="os" value="Windows"> Windows <br>
+					<div class="filterinputs" id="filteros">
 					</div>
 				</form>
 			</div>

@@ -1,17 +1,20 @@
 $(document).ready(function(){
 	$.ajax({
-        url: '../PHP/healthfit.php',
+        crossDomain: true,
+            url: 'http://mmobilehypermedia.altervista.org/PHP/healthfit.php',
         method: "GET",
-        dataType: "json",
 		success: function(result){        
-			var hf = JSON.parse(JSON.stringify(result));
+			var hf = JSON.parse(result);
 			for(i=0; i<hf.length; i++){
-				$('#hfImg'+i).attr('src', "/"+hf[i].Image);
-				document.getElementById('hfName'+i).innerHTML = hf[i].Name;
-                document.getElementById('hfBrand'+i).innerHTML = hf[i].Brand;
-				document.getElementById('hfPresentation'+i).innerHTML = hf[i].Presentation;
-            }
+				$('#hfImg'+i).attr('src', hf[i].Image);
+				$('#hfName'+i).append(hf[i].Name);
+                $('#hfBrand'+i).append(hf[i].Brand);
+				$('#hfPresentation'+i).append(hf[i].Presentation);
+                if(hf[i].Active == '0')
+                	$('#hfbtn'+i).attr({"class": 'btn btn-blue  disabled', "href": '#'});
+                else
+                	$('#hfbtn'+i).attr('href', 'devicecontent.html#ID='+hf[i].ID);
+            }	
 		}
 	});
-	;
 });

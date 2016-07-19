@@ -1,6 +1,7 @@
 $(document).ready(function(){
 	$.ajax({
-        url: '../PHP/tvent.php',
+        crossDomain: true,
+            url: 'http://mmobilehypermedia.altervista.org/PHP/tvent.php',
         method: "GET",
         dataType: "json",
 		success: function(result){        

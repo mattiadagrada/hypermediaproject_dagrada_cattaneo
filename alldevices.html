@@ -26,7 +26,9 @@
 <!-- Bootstrap and JQuery js -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script src="../JS/inclusion.js"></script>
+  <script src="JS/inclusion.js"></script>
+  <script src="JS/alldevices.js"></script>
+  <script src="JS/script.js"></script>
   
  </head>
 
@@ -35,11 +37,21 @@
 <div class="include" data-include="navbar"></div>
 <div class="include" data-include="consumernavbar"></div>
 
+<!-- BREADCRUMB -->
+<div class="container-fluid">
+	<div class="row">
+		<ol class="breadcrumb" >
+		  <li class="active"> All Devices </li>
+		</ol>
+	</div>
+</div>
+<!-- END BREADCRUMB -->
+
 <!--DEVICES IMAGE -->
 <div class="devimage">
 	<div class="container-fluid">
 		<div class="row">
-			<img src="../images/alldevs.jpg">
+			<img src="images/alldevs.jpg">
 		</div>
 	</div>
 </div>
@@ -54,45 +66,7 @@
 				<div class="row">
 					<div class="smartphones">
 						<legend> Smartphones & Cellphones </legend>
-						<ul class="thumbnails">
-							<li class="col-xs-3">
-								<div class="device">
-									<div class="caption">
-										<h4>Samsung</h4>
-										<p>Galaxy S7</p>
-									</div>
-									<div class="thumbnail">
-										<a href="#"><img src="../images/SAMSUNG_S7.jpg" alt=""></a>
-									</div>									
-								</div>
-							</li>
-							<li class="col-xs-3">
-								<div class="device">
-									<div class="caption">
-										<h4>Apple</h4>
-										<p>Iphone SE 16GB </p>
-									</div>
-									<div class="thumbnail">
-										<a href="#"><img src="../images/iPhoneSE.jpg" alt=""></a>
-									</div>									
-								</div>
-							</li>
-							<li class="col-xs-3">
-								<div class="device">									
-									<div class="caption">
-										<h4>Huawei</h4>
-										<p>P9</p>
-									</div>
-									<div class="thumbnail">
-										<a href="#"><img src="../images/huawei-p9.jpg" alt=""></a>
-									</div>
-								</div>
-							</li>
-							<li class="col-xs-3">
-									<div class="col three">				
-										<a href="devicegrid.html#category='Smartphone'" class="btn btn-blue">Show more</a>			
-									</div>
-							</li>
+						<ul class="thumbnails" id="phonecol">
 						</ul>
 					</div>
 				</div>
@@ -102,45 +76,7 @@
 				<div class="row">
 					<div class="tablets">
 						<legend>Tablets & PCs</legend>
-						<ul class="thumbnails">
-							<li class="col-xs-3">
-								<div class="device">
-									<div class="caption">
-										<h4>Samsung</h4>
-										<p>Galaxy TAB A 9.7</p>
-									</div>
-									<div class="thumbnail">
-										<a href="#"><img src="../images/samsung-galaxy-tabA.jpg" alt=""></a>
-									</div>
-								</div>
-							</li>
-							<li class="col-xs-3">
-								<div class="device">
-									<div class="caption">
-										<h4>Apple</h4>
-										<p>Ipad Pro 9.7"</p>
-									</div>
-									<div class="thumbnail">
-										<a href="#"><img src="../images/APPLE_IPAD_PRO_97.jpg" alt=""></a>
-									</div>									
-								</div>
-							</li>
-							<li class="col-xs-3">
-								<div class="device">									
-									<div class="caption">
-										<h4>Huawei</h4>
-										<p>Mediapad T1 10 LTE</p>
-									</div>
-									<div class="thumbnail">
-										<a href="#"><img src="../images/huawei-t1-10.jpg" alt=""></a>
-									</div>
-								</div>
-							</li>
-							<li class="col-xs-3">
-								<div class="col three">				
-									<a href="devicegrid.html#category='Tablet'" class="btn btn-blue">Show more</a>			
-								</div>
-							</li>
+						<ul class="thumbnails" id="tabcol">
 						</ul>
 					</div>
 				</div>
@@ -150,45 +86,7 @@
 				<div class="row">
 					<div class="networking">
 						<legend> Modem & Networking </legend>
-						<ul class="thumbnails">
-							<li class="col-xs-3">
-								<div class="device">
-									<div class="caption">
-										<h4>ZyXEL</h4>
-										<p>Repeater Wi-Fi AC750</p>
-									</div>
-									<div class="thumbnail">
-										<a href="#"><img src="../images/zyxel1.jpg" alt=""></a>
-									</div>									
-								</div>
-							</li>
-							<li class="col-xs-3">
-								<div class="device">
-									<div class="caption">
-										<h4>AVM</h4>
-										<p>FRITZ!WLAN Repeater 1750E</p>
-									</div>
-									<div class="thumbnail">
-										<a href="#"><img src="../images/avd1.jpg" alt=""></a>
-									</div>									
-								</div>
-							</li>
-							<li class="col-xs-3">
-								<div class="device">
-									<div class="caption">
-										<h4>Technoware</h4>
-										<p>ERA Plus 900</p>
-									</div>
-									<div class="thumbnail">
-										<a href="#"><img src="../images/tecnoware900.jpg" alt=""></a>
-									</div>									
-								</div>
-							</li>	
-							<li class="col-xs-3">
-								<div class="col three">				
-									<a href="devicegrid.html#category='Networking'" class="btn btn-blue">Show more</a>			
-								</div>
-							</li>
+						<ul class="thumbnails" id="netcol">
 						</ul>
 					</div>
 				</div>
@@ -198,45 +96,7 @@
 				<div class="row">
 					<div class="smartliving">
 						<legend> TV & Smart Living</legend>
-						<ul class="thumbnails">
-							<li class="col-xs-3">
-								<div class="device">
-									<div class="caption">
-										<h4>D-Link</h4>
-										<p>Smart Home</p>
-									</div>
-									<div class="thumbnail">
-										<a href="#"><img src="../images/dlinkSmartHome.jpg" alt=""></a>
-									</div>									
-								</div>
-							</li>
-							<li class="col-xs-3">
-								<div class="device">
-									<div class="caption">
-										<h4>Apple</h4>
-										<p>Watch Sport 38</p>
-									</div>
-									<div class="thumbnail">
-										<a href="#"><img src="../images/applesport.jpg" alt=""></a>
-									</div>									
-								</div>
-							</li>
-							<li class="col-xs-3">
-								<div class="device">
-									<div class="caption">
-										<h4>Beats</h4>
-										<p>Solo 2 Headphones</p>
-									</div>
-									<div class="thumbnail">
-										<a href="#"><img src="../images/beats.jpg" alt=""></a>
-									</div>									
-								</div>
-							</li>	
-							<li class="col-xs-3">
-								<div class="col three">				
-									<a href="devicegrid.html#category='Smart Living'" class="btn btn-blue">Show more</a>			
-								</div>
-							</li>
+						<ul class="thumbnails" id="smartcol">
 						</ul>
 					</div>
 				</div>
@@ -246,45 +106,7 @@
 				<div class="row">
 					<div class="outlet">
 						<legend> Outlet</legend>
-						<ul class="thumbnails">
-							<li class="col-xs-3">
-								<div class="device">
-									<div class="caption">
-										<h4>Samsung</h4>
-										<p>Galaxy S7</p>
-									</div>
-									<div class="thumbnail">
-										<a href="#"><img src="../images/SAMSUNG_S7.jpg" alt=""></a>
-									</div>									
-								</div>
-							</li>
-							<li class="col-xs-3">
-								<div class="device">
-									<div class="caption">
-										<h4>Apple</h4>
-										<p>Watch Sport 38</p>
-									</div>
-									<div class="thumbnail">
-										<a href="#"><img src="../images/applesport.jpg" alt=""></a>
-									</div>									
-								</div>
-							</li>
-							<li class="col-xs-3">
-								<div class="device">
-									<div class="caption">
-										<h4>Apple</h4>
-										<p>Ipad Pro 9.7"</p>
-									</div>
-									<div class="thumbnail">
-										<a href="#"><img src="../images/APPLE_IPAD_PRO_97.jpg" alt=""></a>
-									</div>									
-								</div>
-							</li>	
-							<li class="col-xs-3">
-								<div class="col three">				
-									<a href="#" class="btn btn-blue">Show more</a>			
-								</div>
-							</li>
+						<ul class="thumbnails" id="outletcol" >
 						</ul>
 					</div>
 				</div>

@@ -7,7 +7,7 @@ $dbname = "my_mmobilehypermedia";
 // Create connection
 $mysqli = new mysqli($servername, $username, $password, $dbname);
 
-$query = "SELECT Brand, Name, Image FROM DEVICE";
+$query = "SELECT Brand, Name, Image, ID, Active FROM DEVICE";
 $result = $mysqli->query($query);
 if($result->num_rows > 0){
 	$myArray = array();
