@@ -3,18 +3,12 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.phonegap.helloworld"
+        id        = "org.altervista.mmobilehypermedia"
         version   = "1.0.0">
 
-    <name>Hello World</name>
+    <name>M-Mobile Hypermedia</name>
 
-    <description>
-        Hello World sample application that responds to the deviceready event.
-    </description>
-
-    <author >
-        PhoneGap Team
-    </author>
+    
 
     <!--
         If you do not want any permissions to be added to your app, add the
